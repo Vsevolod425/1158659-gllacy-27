@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-  	<header>
-  		<nav>
-  			<a>
-  				<img src="img/header-footer/logo.svg" width="154" height="64" alt="Gllacy Shop">
-	  		</a>
-	  		<ul>
-	  			<li><a href="#">Каталог</a></li>
-	  			<li><a href="#">Доставка и оплата</a></li>
-	  			<li><a href="#">О Компании</a></li>
-	  		</ul>
-	  		<ul>
-	  			<li>
-            <button tipe="button">Поиск
-            <img src="img/header-footer/search.svg" alt="search"></button></li>
-	  			<li>
-            <button tipe="button">Вход
-            <img src="img/header-footer/enter.svg" alt="enter"></button></li>
-	  			<li>
-            <button tipe="button">Корзина
-              <img src="img/header-footer/buy.svg" alt="basket"></button></li>
-	  		</ul>
-  		</nav>
-  	</header>
-  	<main>
+    <link rel="stylesheet" href="css/style.css">  
+  <title>HTML Academy: Глейси</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a>
+                <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
+            </a>
+            <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О Компании</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <button tipe="button">Поиск
+                    <img src="img/search.svg" alt="search"></button>
+                </li>
+                <li>
+                    <button tipe="button">Вход
+                    <img src="img/enter.svg" alt="enter"></button>
+                </li>
+                <li>
+                    <button tipe="button">Корзина
+                    <img src="img/buy.svg" alt="basket"></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
   		<h1>Gllacy Shop</h1>
 
   		<article>
   			<h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <img src="img/main/Вафля фон.jpg" alt="Вафля">
+             <img src="img/wafer-background.jpg" alt="Wafer">
   			<ul>
+                <li>
+                    <img src="img/ice-i.svg" width="49" height="49" alt="icecream">
+                    Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+                </li>
   				<li>
-  					<img src="https://via.placeholder.com/49x49" width="49" height="49" alt="Мороженка">
-  					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-  				</li>
-  				<li>
-  					<img src="https://via.placeholder.com/49x49" width="49" height="49" alt="Листик">
+  					<img src="img/cow.svg" width="49" height="49" alt="leaf">
   					Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
   				</li>
   				<li>
-  					<img src="https://via.placeholder.com/49x49" width="49" height="49" alt="Корова">
+  					<img src="img/eraser.svg" width="49" height="49" alt="cow">
   					Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
   				</li>
   				<li>
-  					<img src="https://via.placeholder.com/49x49" width="49" height="49" alt="Градусник">
+  					<img src="img/thermo.svg" width="49" height="49" alt="thermometer">
   					Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
   				</li>
   			</ul>
@@ -56,13 +60,13 @@
 
   		<article>
   			<h2>Новое в нашем блоге</h2>
-        <img src="img/main/Клубничный фон.jpg" alt="Клубничный фон">
+            <img src="img/strawberry-background.jpg" alt="Strawberry">
   			<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
   		</article>
 
   		<article>
   			<h2>Подписка</h2>
-        <img src="img/main/Подложка.png" alt="Подложка">
+             <img src="img/substrate.png" alt="Mount"> 
   			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
   			<!-- Здесь будет инпут -->
   			<button type="button">Отправить</button>
@@ -70,29 +74,43 @@
   	</main>
 
   	<footer>
-  		<div>
-  			<ul>
-  				<li><a href="#">Твитер
-          <img src="img/header-footer/twitter.svg" alt="twitter"></a></li>
-  				<li><a href="#">Инстаграм
-          <img src="img/header-footer/instagram.svg" alt="instagram"></a></li>
-  				<li><a href="#">Фейсбук
-          <img src="img/header-footer/fb.svg" alt="facebook"></a></li>
-  				<li><a href="#">Вконтакте
-            <img src="img/header-footer/vk.svg" alt="vkontacte"></a></li>
-  			</ul>
-  		</div>
   		<ul>
-  			<li><a href="#">Для поставщиков
-          <img src="img/header-footer/heart.svg" alt="heart"></a></li>
-  			<li><a href="#">О производстве</a></li>
-  			<li><a href="#">Наши документы</a></li>
-  			<li><a href="#">Экологические стандарты</a></li>
+  			<li>
+              <a href="#">Twitter
+              <img src="img/twitter.svg" alt="twitter"></a>
+            </li>
+  			<li>
+              <a href="#">Instagram
+              <img src="img/instagram.svg" alt="instagram"></a>
+            </li>
+  			<li>
+              <a href="#">Facebook
+              <img src="img/fb.svg" alt="facebook"></a>
+            </li>
+  			<li>
+              <a href="#">Vkontacte
+              <img src="img/vk.svg" alt="vkontacte"></a>
+            </li>
   		</ul>
+        <ul>
+      		<li>
+                <a href="#">Для поставщиков
+                <img src="img/heart.svg" alt="heart"></a>
+            </li>
+  			<li>
+                <a href="#">О производстве</a>
+            </li>
+  			<li>
+                <a href="#">Наши документы</a>
+            </li>
+  			<li>
+                <a href="#">Экологические стандарты</a>
+            </li>
+      	</ul>
   		<div>
-  			<img src="img/header-footer/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+  			<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
   			<p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2019</p>
   		</div>
   	</footer>
-  </body>
+</body>
 </html>
