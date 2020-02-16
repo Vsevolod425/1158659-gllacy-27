@@ -2,19 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">  
-  <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  <title>Gllacy Shop</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a>
+        <nav class="main_navigation">
+            <a class="main_logo">
                 <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
             </a>
-            <ul>
+            <ul class="site_navigation">
                 <li>
                     <a href="#">Каталог</a>
-                    <ul>
+                    <ul class="site_navigation_menu">
                         <li>
                             <a href="#">Новинки</a>
                         </li>
@@ -34,25 +36,28 @@
                 </li>
                 <li><a href="#">Доставка и оплата</a></li>
                 <li><a href="#">О Компании</a></li>
-            </ul>            
-            <ul>
+            </ul>
+            <ul class="user_navigation">
                 <li>
-                    <button type="button">Поиск
-                    <img src="img/search.svg" alt="search"></button>
+                    <button class="button_search" type="button">
+                        <img src="img/search.svg" alt="search">
+                    </button>
                 </li>
                 <li>
                     <button type="button">Вход
-                    <img src="img/enter.svg" alt="enter"></button>
+                        <img src="img/enter.svg" alt="enter">
+                    </button>
                 </li>
                 <li>
                     <button type="button">Корзина
-                    <img src="img/buy.svg" alt="basket"></button>
+                        <img src="img/buy.svg" alt="basket">
+                    </button>
                 </li>
             </ul>
-            <form action="https://echo.htmlacademy.ru">
+            <form class="site_search" action="https://echo.htmlacademy.ru">
                 <input type="text" name="search" placeholder="Крем-брюле">
             </form>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form class="site_registration" action="https://echo.htmlacademy.ru" method="post">
                 <p>
                     <input type="email" name="email" placeholder="email@example.com">
                 </p>
@@ -69,10 +74,10 @@
 
   		<h1>Gllacy Shop</h1>
 
-  		<article>
-  			<h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+  		<article class="info">
+  			<h2 class="info_title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
              <img src="img/wafer-background.jpg" alt="Wafer">
-  			<ul>
+  			<ul class="info_list">
                 <li>
                     <img src="img/ice-i.svg" width="49" height="49" alt="icecream">
                     Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -92,13 +97,13 @@
   			</ul>
   		</article>
 
-  		<article>
+  		<article class="news">
   			<h2>Новое в нашем блоге</h2>
             <img src="img/strawberry-background.jpg" alt="Strawberry">
   			<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
   		</article>
 
-  		<article>
+  		<article class="subscription">
   			<h2>Подписка</h2>
              <img src="img/substrate.png" alt="Mount"> 
   			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.</p>
@@ -110,7 +115,7 @@
   	</main>
 
   	<footer>
-  		<ul>
+  		<ul class="social">
   			<li>
               <a href="#">Twitter
               <img src="img/twitter.svg" alt="twitter"></a>
@@ -128,9 +133,9 @@
               <img src="img/vk.svg" alt="vkontacte"></a>
             </li>
   		</ul>
-        <ul>
+        <ul class="footer_about">
       		<li>
-                <a href="#">Для поставщиков
+                <a class="about_for" href="#">Для поставщиков
                 <img src="img/heart.svg" alt="heart"></a>
             </li>
   			<li>
@@ -143,13 +148,13 @@
                 <a href="#">Экологические стандарты</a>
             </li>
       	</ul>
-  		<div>
+  		<div class="footer_made">
   			<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
   			<p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2019</p>
   		</div>
   	</footer>
 
-    <section>
+    <section class="modal">
         <h2>Мы обязательно вам ответим</h2>
         <img src="img/close-big.svg" alt="button-close">
         <form action="https://echo.htmlacademy.ru" method="post">
