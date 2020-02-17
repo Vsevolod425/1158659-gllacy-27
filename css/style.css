@@ -32,7 +32,8 @@ body {
 	padding: 5px 7px;
 	border-radius: 50px;
 	color: #fff;
-	background-color: #9db1a6;
+	opacity: 0.2;
+	background-color: #fff;
 }
 .site_search {
 	display: none;
@@ -125,6 +126,10 @@ body {
 .shop_list_item{
 	text-decoration: none;
 	color: #fff;
+}
+.shop_list_item:hover {
+	opacity: 0.2;
+	background-color: #fff
 }
 .shop_list_item h3 {
 	font-size: 16px;
