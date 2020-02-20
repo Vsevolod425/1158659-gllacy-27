@@ -24,6 +24,9 @@ body {
 	border-bottom: 1px solid #a1b5a9;
 	color: #fff;
 }
+.site_navigation a:hover {
+	color: #ffbc9e;
+}
 .site_navigation_menu {
 	display: none;
 }
@@ -117,6 +120,9 @@ body {
 	text-decoration: none;
 	border-bottom: 1px solid #aebeb5;
 }
+.crumbs a:hover {
+	color: #ffbc9e;
+}
 .contacts span {
 	font-size: 14px;
 	line-height: 16px;
@@ -170,8 +176,22 @@ footer a {
 	border-bottom: 1px solid #9db1a5;
 	color: #fff;
 }
+.social a {
+	fill: #fff;
+}
+.social a:hover {
+	fill: #ffbc9e;
+	color: #ffbc9e;
+}
 .footer_about {
 	line-height: 16px;
+}
+.footer_about a {
+	fill: #fff;
+}
+.footer_about a:hover {
+	fill: #ffbc9e;
+	color: #ffbc9e;
 }
 .about_for {
 	font-weight: 700;
@@ -179,7 +199,9 @@ footer a {
 .footer_made {
 	font-size: 12px;
 }
-
+.footer_made a:hover {
+	color: #ffbc9e;
+}
 .modal {
 	display: none;
 }
