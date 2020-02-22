@@ -15,7 +15,7 @@ body {
 /*Navigation*/
 
 .container {
-	/*width: 1146px;*/
+	width: 1146px;
 	margin: 0 auto;
 }
 .main_navigation {
@@ -189,6 +189,9 @@ body {
 	line-height: 24px;
 	font-weight: 700;
 	color: #fff;
+}
+.shop_list {
+	width: 1143px;
 }
 .shop_list ul {
 	display: flex;
