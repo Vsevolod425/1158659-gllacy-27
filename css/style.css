@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 }
 body {
-	/*width: 1200px;*/
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
@@ -10,6 +9,43 @@ body {
 	color: #fff;
 	font-family: 'Roboto', 'Arial', sans-serif;
 	background-color: #849d8f;
+}
+.visually_hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	text-decoration: none;
+	cursor: pointer;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+	border-radius: 50px;
+	padding: 9px 22px;
+	box-shadow: 0 2px 2px rgba(172, 16,0, 0.64);
+	background: #f26843;
+	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+	color: #fff;
+}
+.button:hover {
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.button:active {
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 /*Navigation*/
@@ -70,6 +106,148 @@ body {
 }
 .site_registration {
 	display: none;
+}
+
+/*Slider*/
+
+.site_wrapper {
+	min-width: 940px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	transition: background-image 0.5s, background-color 0.5s;
+}
+.slider {
+	position: relative;
+	text-align: center;
+	padding-top: 310px;
+}
+.slider_controls {
+	position: absolute;
+	left: 0;
+	bottom: 10%;
+	z-index: 20;
+	font-size: 0px;
+}
+.slider_controls label {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	background-color: transparent;
+	margin-right: 8px;
+	cursor: pointer;
+}
+.slider_item {
+	padding-bottom: 40px;
+}
+.slider_item a {
+	cursor: pointer;
+}
+.slider_list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.slide {
+	display: none;
+}
+#product_1:checked ~ .site_wrapper #slide1,
+#product_2:checked ~ .site_wrapper #slide2,
+#product_3:checked ~ .site_wrapper #slide3 {
+	display: block;
+}
+#product_1:checked ~ .site_wrapper label[for="product_1"],
+#product_2:checked ~ .site_wrapper label[for="product_2"],
+#product_3:checked ~ .site_wrapper label[for="product_3"] {
+	background-color: #fff;
+}
+#product_1:checked ~ .site_wrapper {
+	background-color: #849d8f;
+	background-image: url(../img/ice_bg_1.png);
+}
+#product_2:checked ~ .site_wrapper {
+	background-color: #8996a6;
+	background-image: url(../img/ice_bg_2.png);
+}
+#product_3:checked ~ .site_wrapper {
+	background-color: #9d8b84;
+	background-image: url(../img/ice_bg_3.png);
+}
+.site_wrapper::before,
+.site_wrapper::after {
+	content: "";
+	visibility: hidden;
+}
+.site_wrapper::before {
+	background-image: url(../img/ice_bg_2.png);
+}
+.site_wrapper::after {
+	background-image: url(../img/ice_bg_3.png);
+}
+.slide_title {
+	width: 700px;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+.slide_button {
+	font-size: 35px;
+	line-height: 44px;
+	padding: 15px 35px;
+}
+.slide_button:hover {
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.slide_button:active {
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+/*Sell*/
+
+.sell {
+	display: flex;
+	justify-content: space-between;
+}
+.sell article {
+	position: relative;
+	width: 560px;
+	height: 230px;
+	padding: 25px 20px;
+}
+.sell article h2 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+	margin: 0;
+	color: #fff;
+}
+.sell article p {
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 15px;
+	color: #fff;
+}
+.sell article a {
+	position: absolute;
+	right: 4%;
+	bottom: 9%;
+}
+.raspberries {
+	background-image: url(../img/raspberries.jpg);
+}
+.choco {
+	background-image: url(../img/choco.jpg);
+}
+.hit ul {
+	margin: 40px 0 30px 0;
+}
+.hit li {
+	padding: 0;
 }
 
 /*Info*/
