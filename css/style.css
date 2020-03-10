@@ -504,14 +504,15 @@ footer a {
 	height: 40px;
 	background-color: rgba(255, 255, 255, 0.2);
 }
+.social li:hover {
+	fill: #ffbc9e;
+	background-color: #ffbc9e;
+	transition: 0.3s;
+}
 .social a {
 	height: 32px;
 	border-bottom: none;
 	fill: #fff;
-}
-.social a:hover {
-	fill: #ffbc9e;
-	color: #ffbc9e;
 }
 .footer_about {
 	display: flex;
