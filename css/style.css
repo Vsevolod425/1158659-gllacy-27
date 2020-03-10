@@ -94,6 +94,7 @@ input[type="radio"].visually-hidden {
 	line-height: 16px;
 	border: none;
 	border-radius: 50px;
+	cursor: pointer;
 	color: #fff;
 	fill: #fff;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -343,7 +344,11 @@ input[type="radio"].visually-hidden {
 	background-color: #e94f38;
 }
 .subscription input {
-
+	width: 370px;
+	padding: 11px;
+	border-radius: 5px;
+	border: none;
+	border: 1px solid #d3d3d2;
 }
 
 /*Map*/
@@ -471,7 +476,7 @@ input[type="radio"].visually-hidden {
 footer {
 	display: flex;
 	justify-content: space-between;
-	/*margin: 0 auto;*/
+	padding: 15px;
 }
 footer ul {
 	list-style: none;
@@ -485,9 +490,22 @@ footer a {
 }
 .social {
 	display: flex;
+	align-items: center;
 	padding: 0;
+	margin: 0;
+}
+.social li {
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+	margin: 0 5px;
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	/*background-color: rgba(255, 255, 255, 0.2);*/
 }
 .social a {
+	border-bottom: none;
 	fill: #fff;
 }
 .social a:hover {
