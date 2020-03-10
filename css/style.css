@@ -496,15 +496,16 @@ footer a {
 }
 .social li {
 	display: flex;
-	/*align-items: center;*/
+	align-items: center;
 	justify-content: center;
 	margin: 0 5px;
 	border-radius: 50px;
 	width: 40px;
 	height: 40px;
-	/*background-color: rgba(255, 255, 255, 0.2);*/
+	background-color: rgba(255, 255, 255, 0.2);
 }
 .social a {
+	height: 32px;
 	border-bottom: none;
 	fill: #fff;
 }
