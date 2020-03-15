@@ -448,12 +448,12 @@ select {
 .sorting svg {
 	position: absolute;
 	top: 48%;
-	left: 14%;
+	left: 15%;
 	fill: #fff;
 }
 .sorting_list {
 	margin-top: 7px;
-	padding: 10px 30px 10px 15px;
+	padding: 10px 37px 10px 15px;
 	border: none;
 	border-radius: 50px;
 	color: #fff;
