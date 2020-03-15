@@ -432,6 +432,32 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	color: #fff;
 }
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
+}
+.sorting {
+	position: relative;
+	margin: 0;
+}
+.sorting svg {
+	position: absolute;
+	top: 40%;
+	left: 14%;
+	fill: #fff;
+}
+.sorting_list {
+	padding: 10px 30px 10px 10px;
+	border: none;
+	border-radius: 50px;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.sorting_list option {
+	color: #000;
+}
 .shop_list {
 	width: 1143px;
 }
