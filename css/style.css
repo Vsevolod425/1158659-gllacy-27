@@ -442,14 +442,18 @@ select {
 	position: relative;
 	margin: 0;
 }
+.sorting_label {
+	padding-left: 15px;
+}
 .sorting svg {
 	position: absolute;
-	top: 40%;
+	top: 48%;
 	left: 14%;
 	fill: #fff;
 }
 .sorting_list {
-	padding: 10px 30px 10px 10px;
+	margin-top: 7px;
+	padding: 10px 30px 10px 15px;
 	border: none;
 	border-radius: 50px;
 	color: #fff;
