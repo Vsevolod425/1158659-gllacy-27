@@ -484,17 +484,24 @@ select {
 .fat_item_list {
 	margin-left: 18px;
 }
+.fat_item label {
+	cursor: pointer;
+}
 .fat_item_list + label::before {
 	content: "";
 	position: absolute;
-	width: 22px;
-	height: 22px;
+	top: 1%;
+	left:14%;
+	width: 20px;
+	height: 20px;
 	border-radius: 50px;
 	border: 3px solid #fff;
 }
 .fat_item_check:checked + label::after {
 	content: "";
 	position: absolute;
+	top: 30%;
+	left:26%;
 	width: 10px;
 	height: 10px;
 	border-radius: 50px;
