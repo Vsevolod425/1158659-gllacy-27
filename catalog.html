@@ -121,8 +121,9 @@
 
 		<h1>Сливочное мороженое</h1>
 
-		<form action="">
-			<label class="sorting_label" for="sorting_list_label">Сортировка:</label>
+		<form class="sorting_menu" action="">
+			<div>
+				<label class="sorting_label" for="sorting_list_label">Сортировка:</label>
 				<p class="sorting">
 					<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
 					<select class="sorting_list" id="sorting_list_label" name="sort">
@@ -132,6 +133,30 @@
 						<option value="fat">по жирности</option>
 					</select>
 				</p>
+			</div>
+
+			<div>
+				<label for="fat">Жирность:</label>
+				<p class="fat">
+					<label>
+						<input class="fat_item" type="radio" name="fat_radio">
+						0%
+					</label>
+					<label>
+						<input class="fat_item" type="radio" name="fat_radio">
+						до 10%
+					</label>
+					<label>
+						<input class="fat_item" type="radio" name="fat_radio">
+						до 30%
+					</label>
+					<label>
+						<input class="fat_item" type="radio" name="fat_radio">
+						выше 30%
+					</label>
+				</p>
+			</div>
+				
 		</form>
 
 		<section class="shop_list">

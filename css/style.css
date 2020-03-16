@@ -438,6 +438,14 @@ select {
 	text-indent: 1px;
 	text-overflow: '';
 }
+.sorting_menu {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 865px;
+}
+.sorting_menu div {
+	margin-right: 25px;
+}
 .sorting {
 	position: relative;
 	margin: 0;
@@ -448,7 +456,7 @@ select {
 .sorting svg {
 	position: absolute;
 	top: 48%;
-	left: 15%;
+	left: 87%;
 	fill: #fff;
 }
 .sorting_list {
@@ -461,6 +469,15 @@ select {
 }
 .sorting_list option {
 	color: #000;
+}
+.fat {
+	width: 415px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.fat_item {
+	margin-left: 18px;
 }
 .shop_list {
 	width: 1143px;
