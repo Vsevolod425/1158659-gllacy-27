@@ -484,7 +484,7 @@ select {
 .fat_item_list {
 	margin-left: 18px;
 }
-.fat_item::before {
+.fat_item_list + label::before {
 	content: "";
 	position: absolute;
 	width: 22px;
@@ -492,11 +492,11 @@ select {
 	border-radius: 50px;
 	border: 3px solid #fff;
 }
-.fat_item_chek:cheked::after {
+.fat_item_chek:cheked + label::after {
 	content: "";
 	position: absolute;
-	width: 5px;
-	height: 5px;
+	width: 10px;
+	height: 10px;
 	border-radius: 50px;
 	background-color: #fff;
 }
