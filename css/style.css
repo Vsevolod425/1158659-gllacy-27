@@ -473,11 +473,32 @@ select {
 .fat {
 	width: 415px;
 	display: flex;
+	list-style: none;
+	padding: 0;
 	align-items: center;
 	background-color: rgba(255, 255, 255, 0.2);
 }
 .fat_item {
+	position: relative;
+}
+.fat_item_list {
 	margin-left: 18px;
+}
+.fat_item::before {
+	content: "";
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	border-radius: 50px;
+	border: 3px solid #fff;
+}
+.fat_item_chek:cheked::after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-radius: 50px;
+	background-color: #fff;
 }
 .shop_list {
 	width: 1143px;
