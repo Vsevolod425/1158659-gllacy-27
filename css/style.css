@@ -492,7 +492,7 @@ select {
 	border-radius: 50px;
 	border: 3px solid #fff;
 }
-.fat_item_chek:cheked + label::after {
+.fat_item_check:checked + label::after {
 	content: "";
 	position: absolute;
 	width: 10px;
