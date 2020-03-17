@@ -441,7 +441,8 @@ select {
 .sorting_menu {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 865px;
+	max-width: 872px;
+	margin-bottom: 25px;
 }
 .sorting_menu div {
 	margin-right: 25px;
@@ -451,7 +452,7 @@ select {
 	margin: 0;
 }
 .sorting_label {
-	padding-left: 15px;
+	padding-left: 20px;
 }
 .sorting svg {
 	position: absolute;
@@ -479,6 +480,9 @@ select {
 	align-items: center;
 	border-radius: 50px;
 	background-color: rgba(255, 255, 255, 0.2);
+}
+.fat_label {
+	padding-left: 20px;
 }
 .fat_item {
 	position: relative;
@@ -512,6 +516,57 @@ select {
 	height: 8px;
 	border-radius: 50px;
 	background-color: #fff;
+}
+.filling {
+	margin: 15px 0 0 0;
+}
+.filling_label {
+	padding-left: 20px;
+}
+.filling_inner {
+	display: flex;
+	list-style: none;
+	padding: 9px 14px;
+	margin-top: 6px;
+	border-radius: 50px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.filling_item {
+	position: relative;
+	margin: 0 18px 0 33px;
+}
+.filling_item label {
+	cursor: pointer;
+}
+.filling_item_list + label::before {
+	content: "";
+	position: absolute;	
+	top: 1px;
+	left: -30px;
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	border: 2px solid #fff;
+}
+.filling_item_list:checked + label::after {
+	content: "";
+	position: absolute;	
+	top: 5px;
+	left: -26px;
+	width: 12px;
+	height: 12px;
+	border-radius: 2px;
+	background-color: #fff;
+}
+.sorting_btn {
+	width: 144px;
+	height: 38px;
+	margin-top: 44px;
+	border-radius: 50px;
+	cursor: pointer;
+	border: 2px solid #fff;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 .shop_list {
 	width: 1143px;

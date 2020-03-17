@@ -136,7 +136,7 @@
 			</div>
 
 			<div>
-				<label for="fat">Жирность:</label>
+				<label class="fat_label" for="fat">Жирность:</label>
 				<ul class="fat">
 					<li class="fat_item">
 						<input class="fat_item_list fat_item_check visually-hidden" id="1" type="radio" name="fat_radio" value="1">
@@ -156,7 +156,33 @@
 					</li>
 				</ul>
 			</div>
-				
+			
+			<div class="filling">
+				<label class="filling_label" for="filling_inner">Наполнители:</label>
+				<ul class="filling_inner">
+					<li class="filling_item">
+						<input class="filling_item_list visually-hidden" id="filling1" type="checkbox" name="filling_checkbox" checked>
+						<label for="filling1">шоколадные</label>
+					</li>
+					<li class="filling_item">
+						<input class="filling_item_list visually-hidden" id="filling2" type="checkbox" name="filling_checkbox" checked>
+						<label for="filling2">сахарные присыпки</label>
+					</li>
+					<li class="filling_item">
+						<input class="filling_item_list visually-hidden" id="filling3" type="checkbox" name="filling_checkbox">
+						<label for="filling3">фрукты</label>
+					</li>
+					<li class="filling_item">
+						<input class="filling_item_list visually-hidden" id="filling4" type="checkbox" name="filling_checkbox">
+						<label for="filling4">сиропы</label>
+					</li>
+					<li class="filling_item">
+						<input class="filling_item_list visually-hidden" id="filling5" type="checkbox" name="filling_checkbox">
+						<label for="filling5">джемы</label>
+					</li>
+				</ul>
+			</div>
+			<button class="sorting_btn" type="submit">Применить</button>
 		</form>
 
 		<section class="shop_list">
