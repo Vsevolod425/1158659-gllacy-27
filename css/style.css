@@ -442,7 +442,7 @@ select {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 872px;
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 }
 .sorting {
 	position: relative;
@@ -468,6 +468,9 @@ select {
 .sorting_list option {
 	color: #000;
 }
+
+/*Filter*/
+
 .filter {
 	margin: 0;
 	padding: 0;
@@ -627,6 +630,8 @@ select {
 .shop_list {
 	width: 1143px;
 }
+
+
 .shop_list ul {
 	display: flex;
 	justify-content: space-between;
