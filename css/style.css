@@ -45,7 +45,7 @@ input[type="radio"].visually-hidden {
 }
 .button:active {
 	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 /*Navigation*/
@@ -67,19 +67,46 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 }
 .site_navigation li {
+	position: relative;
+	list-style: none;
 	align-items: center;
-	padding-right: 25px;
+	padding: 10px 14px;
+}
+.site_navigation_menu {
+	position: absolute;
+	top: 115%;
+	left: 1%;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	color: #000;
+	background-color: #fff;
+}
+.site_navigation_menu_main {
+	font-weight: 700;
+}
+.site_navigation_menu li {
+	padding: 10px 50px 10px 20px;
+}
+.site_navigation_menu a {
+	width: 143px;
+	display: block;
 }
 .site_navigation a {
 	text-decoration: none;
 	border-bottom: 1px solid #a1b5a9;
 	color: #fff;
 }
-.site_navigation a:hover {
-	color: #ffbc9e;
+.site_navigation li:hover {
+	border-radius: 15px;
+	cursor: pointer;
+	background-color: #fff;
 }
-.site_navigation_menu {
-	display: none;
+.site_navigation li:hover a {
+	border-bottom: none;
+	color: #000;
 }
 .user_navigation {
 	display: flex;
@@ -136,7 +163,7 @@ input[type="radio"].visually-hidden {
 .slider {
 	position: relative;
 	text-align: center;
-	padding-top: 310px;
+	margin-top: 310px;
 }
 .slider_controls {
 	position: absolute;
@@ -221,7 +248,7 @@ input[type="radio"].visually-hidden {
 }
 .slide_button:active {
 	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 /*Sell*/
@@ -262,9 +289,6 @@ input[type="radio"].visually-hidden {
 }
 .hit ul {
 	margin: 40px 0 30px 0;
-}
-.hit li {
-	padding: 0;
 }
 
 /*Info*/
@@ -489,7 +513,7 @@ select {
 	font-size: 16px;
 }
 .min_value {
-	width: 108px;
+	width: 112px;
 }
 .max_value {
 	width: 70px;
@@ -627,11 +651,11 @@ select {
 	color: #fff;
 	background-color: rgba(255, 255, 255, 0.2);
 }
+
+
 .shop_list {
 	width: 1143px;
 }
-
-
 .shop_list ul {
 	display: flex;
 	justify-content: space-between;
@@ -641,12 +665,17 @@ select {
 }
 .shop_list_item{
 	width: 267px;
+	padding: 6px 14px 0;
 	margin-bottom: 40px;
 	border-radius: 5px;
 }
 .shop_list_item a{
 	text-decoration: none;
 	color: #fff;
+}
+.shop_list_item img {
+	width: 100%;
+	height: auto;
 }
 .shop_list_item:hover {
 	box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2);
