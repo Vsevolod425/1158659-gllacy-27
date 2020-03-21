@@ -702,11 +702,12 @@ select {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 .shop_list_item h3 {
+	display: inline;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
 	text-align: center;
-	border-bottom: 1px solid #aebeb5;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .shop_list_price {
 	font-size: 45px;
@@ -723,11 +724,12 @@ select {
 	border-bottom: 1px solid #a9bbb1;
 }
 .catalog_btn_item {
-	/*display: flex;*/
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	font-weight: 700;
-	padding: 5px 10px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 	border-radius: 50px;
 	text-align: center;
