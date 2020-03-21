@@ -85,7 +85,7 @@ input[type="radio"].visually-hidden {
 }
 .site_navigation_menu {
 	position: absolute;
-	top: 115%;
+	top: 63%;
 	left: 1%;
 	font-size: 14px;
 	line-height: 16px;
@@ -96,6 +96,7 @@ input[type="radio"].visually-hidden {
 	display: none;
 	color: #000;
 	background-color: #fff;
+	border: 10px solid rgba(225, 225, 225, 0);
 }
 .site_navigation > li:hover .site_navigation_menu {
 	display: block;
@@ -685,7 +686,7 @@ select {
 }
 .shop_list_item{
 	width: 267px;
-	padding: 6px 14px 0;
+	padding: 6px 14px;
 	margin-bottom: 40px;
 	border-radius: 5px;
 }
@@ -706,7 +707,6 @@ select {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
-	text-align: center;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .shop_list_price {
@@ -716,6 +716,9 @@ select {
 .shop_list_weight {
 	font-size: 30px;
 	line-height: 45px;
+}
+.shop_list_text {
+	text-align: center;
 }
 .catalog_btn {
 	display: flex;
