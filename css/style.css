@@ -751,6 +751,7 @@ select {
 	border-bottom: 1px solid #a9bbb1;
 }
 .catalog_btn_pre {
+	font-size: 0;
 	width: 15px;
 	height: 15px;
 	background-color: #fff;
