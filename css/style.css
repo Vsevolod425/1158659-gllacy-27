@@ -745,16 +745,11 @@ select {
 	text-align: center;
 }
 .catalog_btn {
+	position: relative;
 	display: flex;
 	justify-content: flex-end;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #a9bbb1;
-}
-.catalog_btn_pre {
-	font-size: 0;
-	width: 15px;
-	height: 15px;
-	background-color: #fff;
 }
 .catalog_btn_item {
 	display: inline-flex;
@@ -765,8 +760,20 @@ select {
 	height: 30px;
 	cursor: pointer;
 	border-radius: 50px;
+	text-decoration: none;
 	text-align: center;
 	color: #fff;
+}
+.catalog_btn_item::before {
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	width: 300px;
+	height: 300px;
+	cursor: pointer;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	transform: rotate(45deg);
 }
 .catalog_btn_item:hover {
 	background-color: rgba(225, 225, 225, 0.3);
