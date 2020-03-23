@@ -32,6 +32,7 @@ input[type="radio"].visually-hidden {
 	text-decoration: none;
 	cursor: pointer;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+	border: none;
 	border-radius: 50px;
 	padding: 9px 22px;
 	box-shadow: 0 2px 2px rgba(172, 16,0, 0.64);
@@ -163,7 +164,7 @@ input[type="radio"].visually-hidden {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 .user_navigation button:hover,
-.user_navigation button:focus{
+.user_navigation button:focus {
 	fill: #000;
 	color: #000;
 }
@@ -172,7 +173,7 @@ input[type="radio"].visually-hidden {
 	color: #000;
 	background-color: #fff;
 }
-.navigation_button {
+.registration_button {
 	padding: 8px 16px;
 	display: inline-flex;
 	align-items: center;
@@ -193,7 +194,7 @@ input[type="radio"].visually-hidden {
 	right: 28%;
 	width: 340px;
 	height: 85px;
-	padding: 22px 0 0 15px;
+	padding: 22px 0 0 5px;
 	border-radius: 5px;
 	background-color: #f8f7f4;
 }
@@ -204,12 +205,11 @@ input[type="radio"].visually-hidden {
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
 }
-.button_search:active
-.site_search {
+.button_search:hover .site_search {
 	display: block;
 }
 .site_registration {
-	display: none;
+	/*display: none;*/
 }
 
 /*Slider*/
@@ -684,7 +684,7 @@ select {
 .filling_item_list + label::before {
 	content: "";
 	position: absolute;	
-	top: 1px;
+	top: 0;
 	left: -30px;
 	background-image: url(../img/checkbox-off.svg);
 	background-repeat: no-repeat;
@@ -695,13 +695,16 @@ select {
 .filling_item_list:checked + label::after {
 	content: "";
 	position: absolute;	
-	top: 1px;
+	top: 0;
 	left: -30px;
 	background-image: url(../img/checkbox-on.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	width: 30px;
 	height: 30px;
+}
+.filling_item_list:checked + label::before {
+content: none;
 }
 .sorting_btn {
 	width: 144px;
