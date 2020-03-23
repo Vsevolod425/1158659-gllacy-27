@@ -745,11 +745,13 @@ select {
 	text-align: center;
 }
 .catalog_btn {
-	position: relative;
 	display: flex;
 	justify-content: flex-end;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #a9bbb1;
+}
+.catalog_btn_list {
+	position: relative;
 }
 .catalog_btn_item {
 	display: inline-flex;
@@ -764,18 +766,36 @@ select {
 	text-align: center;
 	color: #fff;
 }
-.catalog_btn_item::before {
+.catalog_btn_change {
+	color: #000;
+	background-color: #fff;
+}
+.catalog_btn_nav::before {
+	content: "";
 	position: absolute;
-	top: 1%;
-	left: 1%;
-	width: 300px;
-	height: 300px;
+	top: 10px;
+	left: -12px;
+	width: 8px;
+	height: 8px;
 	cursor: pointer;
-	border-top: 2px solid #fff;
-	border-right: 2px solid #fff;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: rotate(225deg);
+}
+.catalog_btn_nav::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: -12px;
+	width: 8px;
+	height: 8px;
+	cursor: pointer;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
 	transform: rotate(45deg);
 }
 .catalog_btn_item:hover {
+	color: #fff;
 	background-color: rgba(225, 225, 225, 0.3);
 }
 
