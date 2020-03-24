@@ -188,7 +188,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 }
 .site_search {
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	top: 9%;
 	right: 28%;
@@ -197,6 +197,16 @@ input[type="radio"].visually-hidden {
 	padding: 22px 0 0 5px;
 	border-radius: 5px;
 	background-color: #f8f7f4;
+}
+.site_search::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -11%;
+	left: 0;
+	width: 143px;
+	height: 20px;
+	background-color: rgba(225, 225, 225, 0);
 }
 .site_search input {
 	width: 310px;
@@ -208,15 +218,14 @@ input[type="radio"].visually-hidden {
 .button_search:hover .site_search {
 	display: block;
 }
-.site_registration_form:hover + form
-.site_registration {
+.site_registration_form:hover + form {
 	display: block;
 }
 .site_registration {
 	position: absolute;
 	top: 9%;
 	right: 22%;
-	/*display: none;*/
+	display: none;
 	width: 280px;
 	height: 215px;
 	padding: 20px;
@@ -235,6 +244,7 @@ input[type="radio"].visually-hidden {
 .registration_links {
 	display: inline-block;
 	font-size: 14px;
+	line-height: 24px;
 	width: 128px;
 	margin-left: 12px;
 }
