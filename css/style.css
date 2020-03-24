@@ -208,7 +208,7 @@ input[type="radio"].visually-hidden {
 .button_search:hover .site_search {
 	display: block;
 }
-.site_registration_form:hover
+.site_registration_form:hover + form
 .site_registration {
 	display: block;
 }
@@ -216,7 +216,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 9%;
 	right: 22%;
-	display: none;
+	/*display: none;*/
 	width: 280px;
 	height: 215px;
 	padding: 20px;
@@ -233,11 +233,10 @@ input[type="radio"].visually-hidden {
 	border: 1px solid #d3d3d2;
 }
 .registration_links {
-	position: absolute;
 	display: inline-block;
 	font-size: 14px;
 	width: 128px;
-	margin-left: 20px;
+	margin-left: 12px;
 }
 .registration_links a {
 	color: #000;
