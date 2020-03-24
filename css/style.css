@@ -208,20 +208,39 @@ input[type="radio"].visually-hidden {
 .button_search:hover .site_search {
 	display: block;
 }
+.site_registration_form:hover
+.site_registration {
+	display: block;
+}
 .site_registration {
 	position: absolute;
 	top: 9%;
 	right: 22%;
-	/*display: none;*/
+	display: none;
 	width: 280px;
 	height: 215px;
+	padding: 20px;
+	border-radius: 5px;
 	background-color: #f8f7f4;
 }
+.site_registration input {
+	width: 240px;
+	height: 40px;
+	font-size: 14px;
+	border-radius: 5px;
+	padding: 0 15px;
+	margin-bottom: 20px;
+	border: 1px solid #d3d3d2;
+}
 .registration_links {
-	/*position: absolute;*/
+	position: absolute;
 	display: inline-block;
 	font-size: 14px;
 	width: 128px;
+	margin-left: 20px;
+}
+.registration_links a {
+	color: #000;
 }
 
 /*Slider*/
