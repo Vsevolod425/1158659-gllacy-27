@@ -384,7 +384,7 @@ input[type="radio"].visually-hidden {
 	padding: 18px 18px;
 }
 .sell article h2 {
-	font-size: 36px;
+	font-size: 35px;
 	line-height: 41px;
 	font-weight: 700;
 	margin: 0;
@@ -424,7 +424,7 @@ input[type="radio"].visually-hidden {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
-	/*letter-spacing: 2px;*/
+	letter-spacing: 0.006em;
 }
 .info_list {
 	margin: 0;
@@ -822,29 +822,30 @@ content: none;
 }
 .shop_list_item{
 	position: relative;
-	width: 285px;
-	padding: 6px 14px;
-	margin-bottom: 34px;
+	width: 265px;
+	/*padding: 6px 14px;*/
+	margin-bottom: 35px;
 	border-radius: 5px;
 }
 .shop_list li {
-	margin-right: 20px
+	margin-left: 0;
 }
-.shop_list li:nth-child(4n) {
+.shop_list li:nth-child(1n) {
 	margin-right: 0;
 }
+
 .shop_list_item a{
 	text-decoration: none;
 	color: #fff;
 }
-.shop_list_item img {
+/*.shop_list_item img {
 	width: 100%;
 	height: auto;
-}
-.shop_list_item:hover {
+}*/
+/*.shop_list_item:hover {
 	box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2);
 	background-color: rgba(255, 255, 255, 0.2);
-}
+}*/
 .shop_list_item h3 {
 	display: inline;
 	font-size: 16px;
@@ -854,21 +855,26 @@ content: none;
 }
 .shop_list_data {
 	position: absolute;
-	bottom: 70px;
-	left: 10px;
+	bottom: 68px;
+	left: -3px;
 	font-weight: 700;
 }
 .shop_list_price {
 	font-size: 45px;
 	line-height: 45px;
 }
+.shop_list_coin {
+	font-size: 43px;
+	margin-left: 7px;
+}
 .shop_list_weight {
 	font-size: 30px;
 	line-height: 45px;
 }
 .shop_list_text {
+	font-size: 15px;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 8px;
 }
 .catalog_btn {
 	display: flex;
