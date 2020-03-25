@@ -255,8 +255,8 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 20px;
 	border: 1px solid #d3d3d2;
 }
-.registration_btn {
-	margin-bottom: 10px;
+.registration_btns {
+	display: flex;
 }
 .registration_links {
 	display: inline-block;
@@ -264,6 +264,7 @@ input[type="radio"].visually-hidden {
 	line-height: 24px;
 	width: 128px;
 	margin-left: 8px;
+	text-align: left;
 }
 .registration_links a {
 	color: #000;
