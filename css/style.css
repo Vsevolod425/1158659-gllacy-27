@@ -835,6 +835,7 @@ content: none;
 	width: 265px;
 	margin-bottom: 37px;
 	border-radius: 5px;
+	z-index: 5;
 }
 .shop_list_item::after {
 	content: "";
@@ -845,6 +846,7 @@ content: none;
 	height: 345px;
 	background-color: rgba(225, 225, 225, 0.4);
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+	z-index: 0;
 }
 .shop_list li {
 	margin-left: 0;
