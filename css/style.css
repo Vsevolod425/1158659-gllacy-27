@@ -835,18 +835,28 @@ content: none;
 	width: 265px;
 	margin-bottom: 37px;
 	border-radius: 5px;
-	z-index: 9999;
 }
-.shop_list_item::after {
-	content: "";
+.shop_list_item_back {
 	position: absolute;
 	top: -3%;
 	left: -5%;
+	display: none;
 	width: 293px;
 	height: 345px;
-	background-color: rgba(225, 225, 225, 0.4);
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: rgba(225, 225, 225, 0.2);
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 	z-index: 0;
+}
+.shop_list_item_content {
+	position: relative;
+	cursor: pointer;
+	z-index: 9999;
+}
+.shop_list_item:hover
+.shop_list_item_back {
+	display: block;
 }
 .shop_list li {
 	margin-left: 0;
@@ -887,7 +897,7 @@ content: none;
 .shop_list_text {
 	font-size: 15px;
 	text-align: center;
-	margin-top: 8px;
+	padding-top: 8px;
 }
 .catalog_btn {
 	display: flex;
