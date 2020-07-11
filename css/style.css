@@ -89,6 +89,7 @@ input[type="radio"].visually-hidden {
 	background-color: #fff;
 }
 .site_navigation_menu {
+  display: none;
 	position: absolute;
 	top: 115%;
 	left: 1%;
@@ -99,7 +100,6 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	margin: 0;
 	border-radius: 5px;
-	display: none;
 	color: #000;
 	background-color: #fff;
 }
@@ -289,8 +289,6 @@ input[type="radio"].visually-hidden {
 	color: #000;
 }
 
-/*Slider*/
-
 .contact_info {
   font-size: 14px;
   line-height: 16px;
@@ -307,6 +305,9 @@ input[type="radio"].visually-hidden {
   font-size: 22px;
   line-height: 24px;
 }
+
+/*Slider*/
+
 .site_wrapper {
 	min-width: 940px;
 	background-repeat: no-repeat;
